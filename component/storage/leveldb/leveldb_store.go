@@ -154,3 +154,8 @@ func (s *leveldbStore) Delete(k string) error {
 
 	return s.db.Delete([]byte(k), nil)
 }
+
+// FIXME: Query (not complete)
+func (s *leveldbStore) Query(query string) (storage.StoreIterator, error) {
+	return nil, nil
+}
